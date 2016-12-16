@@ -34,9 +34,9 @@ li a {
     border: 1px solid #bcbcbc;
     box-shadow: 2px 2px 10px #888888;
     background-color: #f6f6f7;
-    height: 1000px;
+    height: 1300px;
 }
-.hr-horizontal{
+.hr-horizontal-top{
     margin-left: 40px;
     margin-right: 30px;
     height: 1px;
@@ -44,6 +44,14 @@ li a {
     background-color: #bcbcbc;
     position: relative;
     margin-top: -10px;
+}
+.hr-horizontal-bot{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1px;
+    color: #bcbcbc;
+    background-color: #bcbcbc;
+    position: relative;
 }
 .course-title{
     color: #6f6f6f;
