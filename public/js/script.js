@@ -1,0 +1,4 @@
+/* 
+js functions
+you can make separate js files for different functions
+ */

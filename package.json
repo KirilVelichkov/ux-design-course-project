@@ -1,0 +1,23 @@
+{
+  "name": "ux-design-course-project",
+  "version": "1.0.0",
+  "description": "Telerik Academy - Courses",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhotoVillagers/ux-design-course-project.git"
+  },
+  "author": "Kiril Velichkov, Silviya Boteva, Kiril Peyanski, Boris Radev, Nataliya Adamova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhotoVillagers/ux-design-course-project/issues"
+  },
+  "homepage": "https://github.com/PhotoVillagers/ux-design-course-project#readme"
+}
