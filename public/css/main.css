@@ -2,29 +2,36 @@ body {
     background-image: url("../../images/background.png");
     background-color: #cccccc;
 }
-ul {
+hr.my-color {
+    border-color: #00aa7d;
+}
+#courses-nav-container {
+    display: none;
+}
+
+#nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: black
 }
-li {
+#nav-bar li {
     float: left;
 }
-li a {
+#nav-bar li a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
 }
-.logo{
+#nav-bar .logo{
     padding: 5px 5px 5px 120px;
 }
-.menu{
+#nav-bar .menu{
     padding:15px 20px 0px 0px;
 }
-.navbar-icons{
+#nav-bar .navbar-icons{
     padding-right: 150px;
     float: right;
 }

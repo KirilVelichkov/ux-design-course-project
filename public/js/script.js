@@ -1,4 +1,6 @@
-/* 
-js functions
-you can make separate js files for different functions
- */
+function showCourses() {
+    divToShow = document.getElementById('courses-nav-container');
+    divToHide = document.getElementById('content');
+    divToShow.style.display = "block";
+    divToHide.style.display = "none";
+}
