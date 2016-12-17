@@ -2,9 +2,11 @@ body {
     background-image: url("../../images/background.png");
     background-color: #cccccc;
 }
+
 hr.my-color {
     border-color: #00aa7d;
 }
+
 #courses-nav-container {
     display: none;
 }
@@ -16,26 +18,33 @@ hr.my-color {
     overflow: hidden;
     background-color: black
 }
+
 #nav-bar li {
     float: left;
 }
+
 #nav-bar li a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
 }
-#nav-bar .logo{
+
+#nav-bar .logo {
     padding: 5px 5px 5px 120px;
 }
-#nav-bar .menu{
-    padding:15px 20px 0px 0px;
+
+#nav-bar .menu {
+    padding: 15px 20px 0px 0px;
 }
-#nav-bar .navbar-icons{
+
+#nav-bar .navbar-icons {
     padding-right: 150px;
     float: right;
 }
-#content{
+
+#content {
+    margin-top: 10px;
     margin-left: 200px;
     margin-right: 200px;
     border: 1px solid #bcbcbc;
@@ -43,7 +52,8 @@ hr.my-color {
     background-color: #f6f6f7;
     height: 1300px;
 }
-.hr-horizontal-top{
+
+.hr-horizontal-top {
     margin-left: 40px;
     margin-right: 30px;
     height: 1px;
@@ -52,7 +62,8 @@ hr.my-color {
     position: relative;
     margin-top: -10px;
 }
-.hr-horizontal-bot{
+
+.hr-horizontal-bot {
     margin-left: 20px;
     margin-right: 20px;
     height: 1px;
@@ -60,52 +71,70 @@ hr.my-color {
     background-color: #bcbcbc;
     position: relative;
 }
-.course-title{
+
+.course-title {
     color: #6f6f6f;
     margin-left: 20px;
+    margin-top: 20px;
 }
-.calendar-text-big{
+
+.calendar-text-big {
     font-weight: bold;
     font-size: 18px;
 }
-.calendar-text-small{
+
+.calendar-text-small {
     font-size: 14px;
     color: grey;
 }
-.group{
+
+.group {
     margin-left: 20px;
+    margin-top: 20px;
 }
-.calendar-logo, .attendance-icon{
+
+.calendar-logo,
+.attendance-icon {
     margin-bottom: 25px;
 }
-.group-coursedate{
+
+.group-coursedate {
     padding-left: 10px;
     padding-right: 15px;
     border-right: 2px solid #bcbcbc;
 }
-.group-attendance{
+
+.group-attendance {
     padding-left: 15px;
 }
-.time-left{
-    float:right;
+
+.time-left {
+    float: right;
     margin-right: 50px;
 }
-.group > div{
+
+.group>div {
     display: inline-block;
 }
-.materials-icon{
-    float:left;
+
+.materials-icon {
+    float: left;
     margin-left: 40px;
+    margin-top: 20px;
 }
-.license-icon{
+
+.license-icon {
     float: right;
     margin-right: 30px;
+    margin-top: 20px;
 }
-.license-icon > a > img{
-    width : 80px;
+
+.license-icon>a>img {
+    width: 80px;
 }
-.course-info{
-   /* border:1px solid black; */
+
+.course-info {
+    /* border:1px solid black; */
     display: inline-block;
     margin-left: 40px;
     margin-top: 20px;
@@ -113,8 +142,9 @@ hr.my-color {
     font-size: 18px;
     font-weight: bold;
 }
-.not-logged-course-icon{
-    float:right;
-    margin-right: 30px;
-}
 
+.not-logged-course-icon {
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}

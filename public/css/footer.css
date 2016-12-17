@@ -7,12 +7,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.rows {
+#mainFooter .rows {
     width: 200px;
     margin-left: 21px;
 }
 
-.inline-block {
+#mainFooter .inline-block {
     display: inline-block;
 }
 
@@ -28,26 +28,26 @@
     font-size: 12px;
 }
 
-.rows h4 li {
+#mainFooter .rows h4 li {
     color: white;
 }
 
-.rows ul li {
+#mainFooter .rows ul li {
     list-style-type: none;
 }
 
-.rows ul li a {
+#mainFooter .rows ul li a {
     text-decoration: none;
     color: white;
 }
 
-.rows h4 a {
+#mainFooter .rows h4 a {
     text-decoration: none;
     color: white;
     font-weight: 900;
 }
 
-.rows .last-column {
+#mainFooter .rows .last-column {
     margin-top: -20px;
     margin-bottom: 40px;
 }
