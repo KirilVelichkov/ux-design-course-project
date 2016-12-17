@@ -95,7 +95,7 @@ hr.my-color {
     padding-top: 5px;
     padding-left: 10px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     color: #6f6f6f;
 }
@@ -111,16 +111,20 @@ hr.my-color {
     border-left: 1px solid #6f6f6f;
 }
 
-.message {
-    text-align: center;
-    margin-left: -50px;
+.send-solution {
     color: #ff5e56;
     font-size: 18px;
     font-weight: bold;
 }
 
 .evaluate-now {
-    margin-top: 10px;
+    color: #ff5e56;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.notification-evaluation .col-sm-2 {
+    padding-top: 12px;
 }
 
 .course-title {

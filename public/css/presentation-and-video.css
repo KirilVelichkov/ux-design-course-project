@@ -1,0 +1,19 @@
+#content .row .text-center p {
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#content .row .text-center p a {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+#content .row .text-center img {
+    border: 2px solid #959da9;
+    box-shadow: 2px 2px 10px #888888;
+    margin-bottom: 20px;
+}
