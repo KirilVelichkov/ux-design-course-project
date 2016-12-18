@@ -1,0 +1,101 @@
+body {
+    font-family: Tahoma;
+    width: 1050px;
+    height: 1050px;
+}
+
+header {
+    text-align: center;
+    color: #1f8294;
+}
+
+#calendar {
+    width: 100%;    
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar li {
+    display: block;
+    float: left;
+    width:14.342%;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+#calendar .days li {
+    height: 150px;
+}
+
+#calendar .course:hover {
+    background: #d3d3d3;
+}
+
+#calendar .date {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #474155;
+    color: #fff;
+    width: 92%;
+    height: 20px;
+}
+
+#calendar .event {
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#calendar .lection {
+    background: #518BAF;
+    border: 1px solid #b5dbdc;
+    color: black;
+}
+#calendar .homework {
+    background: #FF5047;
+    border: 1px solid #b5dbdc;
+    color: black;
+}
+#calendar .exam {
+    background: #E14209;
+    border: 1px solid #b5dbdc;
+    color: black;
+}
+
+#calendar .event-time {
+    color: white;
+    margin: 3px 0 7px 0;
+    font-weight: bold;
+}
+
+#calendar .not-course {
+    background: #B2B2B2;
+}
+
+/*#calendar .weekend {
+    background: wheat;
+}*/
+
+
+@media(max-width: 768px) {
+    #calendar li {
+        height: auto !important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+
+    #calendar .date {
+        width: 130px;
+    }
+}
