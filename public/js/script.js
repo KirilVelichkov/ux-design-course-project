@@ -2,27 +2,43 @@ function showCourses() {
 
     var $divToShow = $('#courses-nav-container');
     var $divToHide = $('#content');
-    
-    if ($divToShow.is(':visible')){
+    var $profileToHide = $('#user-profile-container');
+
+    if ($divToShow.is(':visible')) {
         $divToHide.show();
         $divToShow.hide();
-         $('#courses').removeClass('menu-active');
-    }else{
+        $profileToHide.hide();
+        $('#courses').removeClass('menu-active');
+    } else {
         $divToShow.show();
         $divToHide.hide();
-         $('#courses').addClass('menu-active');
+        $profileToHide.hide();
+        $('#courses').addClass('menu-active');
     }
-
-    // divToShow = document.getElementById('courses-nav-container');
-    // divToHide = document.getElementById('content');
-    // divToShow.style.display = 'block';
-    // divToHide.style.display = 'none';
 }
 
-function hideSearch(){
+function showProfile() {
+
+    var $divToShow = $('#user-profile-container');
+    var $divToHide = $('#content');
+    var $coursesToHide = $('#courses-nav-container');
+
+    if ($divToShow.is(':visible')) {
+        $divToHide.show();
+        $divToShow.hide();
+        $('#courses').removeClass('menu-active');
+    } else {
+        $divToShow.show();
+        $divToHide.hide();
+        $coursesToHide.hide();
+        $('#courses').removeClass('menu-active');
+    }
+}
+
+function hideSearch() {
     $('#searchBox').hide();
 }
 
-function showSearch(){
+function showSearch() {
     $('#searchBox').show();
 }

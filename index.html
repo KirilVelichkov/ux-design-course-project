@@ -4,12 +4,14 @@
 <head lang="en">
     <title>PhotoShopite</title>
     <meta charset="UTF-8">
+    <link href="./public/css/user-profile.css" rel="stylesheet" type="text/css" />
     <link href="./public/css/main.css" rel="stylesheet" type="text/css" />
     <link href="./public/css/footer.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="./public/css/allCourses-nav.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
@@ -33,613 +35,827 @@
                         <a href="#"><img src="./images/language.png" alt="language"></a>
                     </li>
                     <li class="menu">
-                        <a href="#"><img src="./images/account.png" alt="account"></a>
+                        <a href="#" onclick="showProfile()"><img src="./images/account.png" alt="account"></a>
                     </li>
                 </ul>
             </li>
         </ul>
     </nav>
 
-    <div id="courses-nav-container">
-        <div id="iniciative-container" class="inline-block left">
-            <ul>
-                <li>
-                    <a>Софтуерна Академия</a>
-                    <p>Интензивна програма за обучение на софтуерни инженери за вашето успешно кариерно развитие в ИТ индустрията.
-                    </p>
-                </li>
-                <li>
-                    <a>Училищна академия</a>
-                    <p>Безплатни обучения за ученици от 7-ми до 12-и клас с цел усвояване на базови умения по разработка на софтуер и подготовка за НОИТ.</p>
-                </li>
-                <li>
-                    <a>Дигитална Академия</a>
-                    <p>Цялостно безплатно обучение по дигитален маркетинг, подкрепено от Google.</p>
-                </li>
-                <li>
-                    <a>Алго Академия</a>
-                    <p>Подготовка за състезания и олимпиади по информатика и състезателно програмиране чрез безплатни уроци, обучения, състезания и тренировки.</p>
-                </li>
-                <li>
-                    <a>Детска Академия</a>
-                    <p>Инициативата цели да събуди и запази интереса на учениците от 4-ти до 6-и клас към компютърното програмиране и да подготви следващите български шампиони по информатика.</p>
-                </li>
-            </ul>
-        </div>
-        <div id="courses-containter" class="inline-block right">
-            <div id="tracks-first-row">
-                <div class="track inline-block">
-                    <h3>Основи на програмирането</h3>
-                    <hr class="my-color">
-                    <ul>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Основи на C#</a>
+    <div id="user-profile-container">
+        <div id="my-courses-container" class="inline-block">
+            <div id="my-courses-title">
+                <h2 class="inline-block">Моите Курсове</h2>
+                <p class="inline-block right">Здравей, <span class="italic">kikopeyanski</span></p>
+            </div>
+            <div id="courses-panel">
+                <div id="my-courses-first-row">
+                    <ul class="my-course-list">
+                        <li class="my-course-list-lis">
+                            <div class="my-course inline-block">
+                                <div class="my-course-title">
+                                    <a href="">
+                                    Уеб приложения с Node.js
+                                    </a>
+                                </div>
+                                <div class="my-course-content">
+                                    <div class="my-course-homeworks inline-block">
+                                        Домашни: 0 от 9
+                                    </div>
+                                    <div class="my-tracks inline-block right">
+                                        <ul>
+                                            <li>
+                                                Mobile
+                                                <div class="track-color bg-mobile inline-block"></div>
+                                            </li>
+                                            <li>
+                                                Web
+                                                <div class="track-color bg-web inline-block"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">C# за напреднали</a>
+                        <li class="my-course-list-lis">
+                            <div class="my-course inline-block">
+                                <div class="my-course-title">
+                                    <a href="">
+                                    Single-page приложения с Angular 2
+                                    </a>
+                                </div>
+                                <div class="my-course-content">
+                                    <div class="my-course-homeworks inline-block">
+                                        Домашни: 4 от 5
+                                    </div>
+                                    <div class="my-tracks inline-block right">
+                                        <ul>
+                                            <li>
+                                                Front-end
+                                                <div class="track-color bg-frontend inline-block"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">ООП със C#</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Основи на JavaScript</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">ООП с JavaScript</a>
+                        <li class="my-course-list-lis">
+                            <div class="my-course inline-block">
+                                <div class="my-course-title">
+                                    <a href="">
+                                    Структури от данни и алгоритми
+                                    </a>
+                                </div>
+                                <div class="my-course-content">
+                                    <div class="my-course-homeworks inline-block">
+                                        Домашни: 8 от 14
+                                    </div>
+                                    <div class="my-tracks inline-block right">
+                                        <ul>
+                                            <li>
+                                                Mobile
+                                                <div class="track-color bg-mobile inline-block"></div>
+                                            </li>
+                                            <li>
+                                                Web
+                                                <div class="track-color bg-web inline-block"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
-                <div class="track inline-block">
-                    <h3>Програмиране за напреднали</h3>
-                    <hr class="my-color">
-                    <ul>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Компонентно тестване със C#</a>
+                <div id="my-courses-second-row">
+                    <ul class="my-course-list">
+                        <li class="my-course-list-lis">
+                            <div class="my-course inline-block">
+                                <div class="my-course-title">
+                                    <a href="">
+                                        Училищна академия: HTML, CSS 
+                                    </a>
+                                </div>
+                                <div class="my-course-content">
+                                    <div class="my-course-homeworks inline-block">
+                                        Домашни: 0 от 9
+                                    </div>
+                                    <div class="my-tracks inline-block right">
+                                        <ul>
+                                            <li>
+                                                School academy
+                                                <div class="track-color bg-school-academy inline-block"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Качествен програмен код със С#</a>
+                        <li class="my-course-list-lis">
+                            <div class="my-course inline-block">
+                                <div class="my-course-title">
+                                    <a href="">
+                                    Обектно-ориентирано програмиране
+                                    </a>
+                                </div>
+                                <div class="my-course-content">
+                                    <div class="my-course-homeworks inline-block">
+                                        Домашни: 3 от 5
+                                    </div>
+                                    <div class="my-tracks inline-block right">
+                                        <ul>
+                                            <li>
+                                                Mobile
+                                                <div class="track-color bg-mobile inline-block"></div>
+                                            </li>
+                                            <li>
+                                                Web
+                                                <div class="track-color bg-web inline-block"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                         </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Структури от данни и алгоритми</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Бази от данни и SQL</a>
-                        </li>
-                        <li class="invisible">
-                            <div class="active-signal invisible"></div>
-                            <a href="">Шаблони за дизайн</a>
+                        <li class="my-course-list-lis">
+                            <div class="my-course inline-block">
+                                <div class="my-course-title">
+                                    <a href="">
+                                    Основи на JavaScript
+                                    </a>
+                                </div>
+                                <div class="my-course-content">
+                                    <div class="my-course-homeworks inline-block">
+                                        Домашни: 4 от 5
+                                    </div>
+                                    <div class="my-tracks inline-block right">
+                                        <ul>
+                                            <li>
+                                                Mobile
+                                                <div class="track-color bg-mobile inline-block"></div>
+                                            </li>
+                                            <li>
+                                                Web
+                                                <div class="track-color bg-web inline-block"></div>
+                                            </li>
+                                            <li>
+                                                Front-end
+                                                <div class="track-color bg-frontend inline-block"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-                </div>
-                <div class="track inline-block">
-                    <h3>Осигуряване на Качеството</h3>
-                    <hr class="my-color">
-                    <ul>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Компонентно тестване със C#</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Осигуряване на качеството част 1</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Осигуряване на качеството част 2</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Шаблони за дизайн</a>
-                        </li>
-                        <li class="invisible">
-                            <div class="active-signal invisible"></div>
-                            <a href="">Шаблони за дизайн</a>
-                        </li>
-                    </ul>
+
+                    </div>
                 </div>
             </div>
-            <div id="tracks-seond-row">
-                <div class="track inline-block">
-                    <h3>Уеб Front-end</h3>
-                    <hr class="my-color">
-                    <ul>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Основи на HTML</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">CSS стилизиране</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">JavaScript UI и DOM</a>
-                        </li>
-                        <li>
-                            <div class="active-signal"></div>
-                            <a href="">UX дизайн</a>
-                        </li>
-                        <li>
-                            <div class="active-signal"></div>
-                            <a href="">Основи на Photoshop</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Изграждане на Уеб Front-end</a>
-                        </li>
-                    </ul>
+            <div id="profile-panel" class="inline-block right">
+                <div id="profile-pic">
+                    <img src="./images/Mina-Leslie-Wujastyk.jpeg" alt="Profile">
                 </div>
-                <div class="track inline-block">
-                    <h3>Уеб Технологии</h3>
-                    <hr class="my-color">
+                <div class="profile-list">
                     <ul>
                         <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Приложения с JavaScript</a>
+                            Моят профил
                         </li>
                         <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Уеб услуги и облачни технологии</a>
+                            Системни съобщения
                         </li>
                         <li>
-                            <div class="active-signal"></div>
-                            <a href="">Уеб приложения с Node.js</a>
+                            Календар
                         </li>
                         <li>
-                            <div class="active-signal"></div>
-                            <a href="">SPA приложения с AngularJS</a>
+                            Приятели
                         </li>
                         <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">ASP.NET Web Forms</a>
+                            Съобщения от приятели
                         </li>
                         <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">ASP.NET MVC</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="track inline-block">
-                    <h3>Мобилни Технологии</h3>
-                    <hr class="my-color">
-                    <ul>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Приложения за Windows</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Мобилни приложения за Android</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Приложения за iPhone и iPad</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">Мултиплатформени мобилни</a>
-                        </li>
-                        <li>
-                            <div class="active-signal invisible"></div>
-                            <a href="">приложения с NativeScript</a>
-                        </li>
-                        <li class="invisible">
-                            <div class="active-signal invisible"></div>
-                            <a href="">Шаблони за дизайн</a>
+                            Отборна работа
                         </li>
                     </ul>
                 </div>
             </div>
-            <hr class="my-color" style="margin: 15px 0px 0px 50px;">
-            <div class="courses-button right">
-                <p style="margin-top: 11px">Активни Курсове</p>
-            </div>
-        </div>
-    </div>
+            <div id="exit-button" class="right">Изход</div>
 
-    <main id="content">
-        <div class="notification notification-message">
-            <p>Моля въведете линк към Github и LinkedIn профилите си от <span style="color: #ff5e56;">този линк</span>.</p>
-        </div>
-        <div class="notification notification-evaluation">
-            <div class="row">
-                <div class="col-sm-9">
-                    <p>
-                        В момента има активно оценяване на изпита за курса "Бази данни (октомври 2016)". </br>
-                        Можете да оценявате решенията на вашите колеги.
-                    </p>
-                </div>
-                <div class="col-sm-1">
-                    <div class="vertical-line"></div>
-                </div>
-                <div class="col-sm-2">
-                    <div class=" message evaluate-now">Оцени сега</div>
-                </div>
-            </div>
-        </div>
-        <div class="notification notification-exam">
-            <div class="row">
-                <div class="col-sm-9">
-                    <p>
-                        В момента тече изпит по "Шаблони за дизайн (октомври 2016)". </br>
-                        Можете да изпращате вашите решения.
-                    </p>
-                </div>
-                <div class="col-sm-1">
-                    <div class="vertical-line"></div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="message send-solution">Изпрати </br> решение</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="course">
-            <div class="course-header">
-                <a href="#">
-                    <h3 class="course-title">Курс "Single-page приложения с Angular 2"</h3>
-                </a>
-                <div class="group">
-                    <div class="group-calendar">
-                        <a href="./calendar.html" alt="calendar"><img class="calendar-logo" src="./images/calendar-icon.png"></a>
-                    </div>
-                    <div class="group-coursedate">
-                        <span class="calendar-text-big">05.12.2016 - 04.01.2016</span>
-                        <br />
-                        <span class="calendar-text-small">5 лекции на седмица</span>
-                    </div>
-
-                    <div class="group-attendance">
-                        <img class="attendance-icon" src="./images/attendance-icon.png">
-                    </div>
-                    <div class="group-attendance">
-                        <span class="calendar-text-big">0 	присъствено</span>
-                        <br />
-                        <span class="calendar-text-small">178 онлайн</span>
-                    </div>
-
-                    <div class="time-left">
-                        <img class="attendance-icon" src="./images/time-left.png">
-                    </div>
-                </div>
-            </div>
-
-            <hr class="hr-horizontal-top">
-
-            <div class="materials-icon">
-                <a href="./course-materials"><img src="./images/course-materials-icon.png"></a>
-            </div>
-            <div class="license-icon">
-                <a href="./course-materials"><img src="./images/license-icon.png"></a>
-            </div>
-
-            <div class="course-info">
-                На 7 декември в "Академията на Телерик" стартира първият в България безплатен курс по Angular 2 - най-новата технология за създаване на front-end уеб приложения по лесен и бърз начин. Първата версия на Angular 2 беше пусната публично през септември 2016
-                г. Angular 2 ви дава възможност да използвате TypeScript - съвременен програмен език с отворен код, създаден от Microsoft.
-            </div>
-
-            <div>
-                <a href="#"><img class="not-logged-course-icon" src="./images/course-not-loggedin.png"></a>
-            </div>
-
-            <br />
-            <br />
-            <br />
-            <hr class="hr-horizontal-bot">
 
         </div>
 
-        <div class="course">
-            <div class="course-header">
-                <a href="#">
-                    <h3 class="course-title">Курс "Училищна академия: Обектно-ориентирано <br />проргамиране с TypeScript"</h3>
-                </a>
-                <div class="group">
-                    <div class="group-calendar">
-                        <a href="./calendar.html" alt="calendar"><img class="calendar-logo" src="./images/calendar-icon.png"></a>
-                    </div>
-                    <div class="group-coursedate">
-                        <span class="calendar-text-big">27.11.2016 - 29.11.2016</span>
-                        <br />
-                        <span class="calendar-text-small">3 лекции на седмица</span>
-                    </div>
 
-                    <div class="group-attendance">
-                        <img class="attendance-icon" src="./images/attendance-icon.png">
+        <div id="courses-nav-container">
+            <div id="iniciative-container" class="inline-block left">
+                <ul>
+                    <li>
+                        <a>Софтуерна Академия</a>
+                        <p>Интензивна програма за обучение на софтуерни инженери за вашето успешно кариерно развитие в ИТ индустрията.
+                        </p>
+                    </li>
+                    <li>
+                        <a>Училищна академия</a>
+                        <p>Безплатни обучения за ученици от 7-ми до 12-и клас с цел усвояване на базови умения по разработка
+                            на софтуер и подготовка за НОИТ.</p>
+                    </li>
+                    <li>
+                        <a>Дигитална Академия</a>
+                        <p>Цялостно безплатно обучение по дигитален маркетинг, подкрепено от Google.</p>
+                    </li>
+                    <li>
+                        <a>Алго Академия</a>
+                        <p>Подготовка за състезания и олимпиади по информатика и състезателно програмиране чрез безплатни уроци,
+                            обучения, състезания и тренировки.</p>
+                    </li>
+                    <li>
+                        <a>Детска Академия</a>
+                        <p>Инициативата цели да събуди и запази интереса на учениците от 4-ти до 6-и клас към компютърното програмиране
+                            и да подготви следващите български шампиони по информатика.</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="courses-containter" class="inline-block right">
+                <div id="tracks-first-row">
+                    <div class="track inline-block">
+                        <h3>Основи на програмирането</h3>
+                        <hr class="my-color">
+                        <ul>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Основи на C#</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">C# за напреднали</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">ООП със C#</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Основи на JavaScript</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">ООП с JavaScript</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="group-attendance">
-                        <span class="calendar-text-big">104	присъствено</span>
-                        <br />
-                        <span class="calendar-text-small">34 онлайн</span>
+                    <div class="track inline-block">
+                        <h3>Програмиране за напреднали</h3>
+                        <hr class="my-color">
+                        <ul>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Компонентно тестване със C#</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Качествен програмен код със С#</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Структури от данни и алгоритми</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Бази от данни и SQL</a>
+                            </li>
+                            <li class="invisible">
+                                <div class="active-signal invisible"></div>
+                                <a href="">Шаблони за дизайн</a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="time-left">
-                        <img class="attendance-icon" src="./images/time-left1.png">
+                    <div class="track inline-block">
+                        <h3>Осигуряване на Качеството</h3>
+                        <hr class="my-color">
+                        <ul>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Компонентно тестване със C#</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Осигуряване на качеството част 1</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Осигуряване на качеството част 2</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Шаблони за дизайн</a>
+                            </li>
+                            <li class="invisible">
+                                <div class="active-signal invisible"></div>
+                                <a href="">Шаблони за дизайн</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
-            <hr class="hr-horizontal-top">
-
-            <div class="materials-icon">
-                <a href="./course-materials"><img src="./images/course-materials-icon.png"></a>
-            </div>
-            <div class="license-icon">
-                <a href="./course-materials"><img src="./images/license-icon.png"></a>
-            </div>
-
-            <div class="course-info">
-                Втората среща на "Училищната академия на Телерик" за сезон 2016/2017 ще се проведе на 27, 28 и 29 ноември 2016 г. в зала Ultimate в нашия учебен център в София. Темата ще бъде "Обектно-ориентирано програмиране с TypeScript". По време на обучението ще направите първите си стъпки в обектно-ориентираното програмиране и ще се запознаете с детайлите на програмния език TypeScript.  Участието е безплатно, необходима е само предварителна регистрация. Програмата на обучението може да разгледате на нашия <a href="#" class="hyperlink-orange">информационен уебсайт</a>.    
-            </div>
-
-            <div>
-                <a href="#"><img class="not-logged-course-icon" src="./images/course-not-loggedin.png"></a>
-            </div>
-
-            <br />
-            <br />
-            <br />
-            <hr class="hr-horizontal-bot">
-
-        </div>
-
-        <div class="course">
-            <div class="course-header">
-                <a href="#">
-                    <h3 class="course-title">Курс "CSS стилизиране (ноември 2016)"</h3>
-                </a>
-                <div class="group">
-                    <div class="group-calendar">
-                        <a href="./calendar.html" alt="calendar"><img class="calendar-logo" src="./images/calendar-icon.png"></a>
+                <div id="tracks-seond-row">
+                    <div class="track inline-block">
+                        <h3>Уеб Front-end</h3>
+                        <hr class="my-color">
+                        <ul>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Основи на HTML</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">CSS стилизиране</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">JavaScript UI и DOM</a>
+                            </li>
+                            <li>
+                                <div class="active-signal"></div>
+                                <a href="">UX дизайн</a>
+                            </li>
+                            <li>
+                                <div class="active-signal"></div>
+                                <a href="">Основи на Photoshop</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Изграждане на Уеб Front-end</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="group-coursedate">
-                        <span class="calendar-text-big">17.11.2016 - 10.11.2016</span>
-                        <br />
-                        <span class="calendar-text-small">1 лекция на седмица</span>
+                    <div class="track inline-block">
+                        <h3>Уеб Технологии</h3>
+                        <hr class="my-color">
+                        <ul>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Приложения с JavaScript</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Уеб услуги и облачни технологии</a>
+                            </li>
+                            <li>
+                                <div class="active-signal"></div>
+                                <a href="">Уеб приложения с Node.js</a>
+                            </li>
+                            <li>
+                                <div class="active-signal"></div>
+                                <a href="">SPA приложения с AngularJS</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">ASP.NET Web Forms</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">ASP.NET MVC</a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="group-attendance">
-                        <img class="attendance-icon" src="./images/attendance-icon.png">
-                    </div>
-                    <div class="group-attendance">
-                        <span class="calendar-text-big">453 присъствено</span>
-                        <br />
-                        <span class="calendar-text-small">364 онлайн</span>
-                    </div>
-
-                    <div class="time-left">
-                        <img class="attendance-icon" src="./images/time-left-expired.png">
+                    <div class="track inline-block">
+                        <h3>Мобилни Технологии</h3>
+                        <hr class="my-color">
+                        <ul>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Приложения за Windows</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Мобилни приложения за Android</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Приложения за iPhone и iPad</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">Мултиплатформени мобилни</a>
+                            </li>
+                            <li>
+                                <div class="active-signal invisible"></div>
+                                <a href="">приложения с NativeScript</a>
+                            </li>
+                            <li class="invisible">
+                                <div class="active-signal invisible"></div>
+                                <a href="">Шаблони за дизайн</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <hr class="my-color" style="margin: 15px 0px 0px 50px;">
+                <div class="courses-button right">
+                    <p style="margin-top: 11px">Активни Курсове</p>
+                </div>
             </div>
+        </div>
 
-            <hr class="hr-horizontal-top">
 
-            <div class="materials-icon">
-                <a href="./course-materials"><img src="./images/course-materials-icon.png"></a>
+        <main id="content">
+            <div class="notification notification-message">
+                <p>Моля въведете линк към Github и LinkedIn профилите си от <span style="color: #ff5e56;">този линк</span>.</p>
             </div>
-            <div class="license-icon">
-                <a href="./course-materials"><img src="./images/license-icon.png"></a>
-            </div>
-
-            <div class="course-info">
-                “CSS стилизиране”, ще ви предостави необходимите знания, за да създавате модерни уеб сайтове, които се визуализират еднакво добре на всички различни браузъри и платформи.
-            </div>
-
-            <div>
-                <a href="#"><img class="not-logged-course-icon-last" src="./images/course-not-loggedin.png"></a>
-            </div>
-
-          
-            <hr class="hr-horizontal-bot">
-
-        </div>
-    </main>
-
-    <footer id="mainFooter">
-        <div class="rows inline-block">
-            <h4>
-                <a href="http://academy.telerik.com/#" title="Софтуерна академия">Софтуерна академия</a>
-            </h4>
-            <ul>
-                <li>
-                    <a href="http://academy.telerik.com/academy/about" title="За Софтуерната академия">За Софтуерната академия</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/academy/certificates" title="Сертификати">Сертификати</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/academy/admission" title="Прием">Прием</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/academy/apply" title="Кандидатствай">Кандидатствай</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/academy/entrance-exam" title="Приемен изпит">Приемен изпит</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/academy/faq" title="Често задавани въпроси">Често задавани въпроси</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/academy/2016-achievements" title="Постижения през 2016 г.">Постижения през 2016 г.</a>
-                </li>
-            </ul>
-        </div>
-        <div class="rows inline-block">
-            <h4>
-                <a href="http://academy.telerik.com/#" title="Kурсове">Kурсове</a>
-            </h4>
-            <ul>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/about" title="За курсовете">За курсовете</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/programming" title="Програмиране">Програмиране</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/web-design-and-ui" title="Уеб дизайн и UI технологии">Уеб дизайн и UI технологии</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/software-technologies" title="Софтуерни технологии">Софтуерни технологии</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/soft-skills-and-business-skills" title="Личностни и бизнес умения">Личностни и бизнес умения</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/external-courses" title="Външни курсове">Външни курсове</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/archive" title="Архивни курсове">Архивни курсове</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/student-courses/faq" title="Често задавани въпроси">Често задавани въпроси</a>
-                </li>
-            </ul>
-        </div>
-        <div class="rows inline-block">
-            <h4>
-                <a href="http://academy.telerik.com/#" title="Училищна академия">Училищна академия</a>
-            </h4>
-            <ul>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/about" title="За Училищната академия">За Училищната академия</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/season-2016-2017" title="Сезон 2016-2017">Сезон 2016-2017</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/season-2015-2016" title="Сезон 2015-2016">Сезон 2015-2016</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/season-2014-2015" title="Сезон 2014-2015">Сезон 2014-2015</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/season-2013-2014" title="Сезон 2013-2014">Сезон 2013-2014</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/2012-2013" title="Сезон 2012-2013">Сезон 2012-2013</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/season-2011-2012" title="Сезон 2011-2012">Сезон 2011-2012</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/season-2010-2011" title="Сезон 2010-2011">Сезон 2010-2011</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/faq" title="Често задавани въпроси">Често задавани въпроси</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/school-academy/makes-students-software-developers" target="_blank" title="Инфографика">Инфографика</a>
-                </li>
-            </ul>
-        </div>
-        <div class="rows inline-block">
-            <h4>
-                <a href="http://academy.telerik.com/#" title="Семинари">Семинари</a>
-            </h4>
-            <ul>
-                <li>
-                    <a href="http://academy.telerik.com/seminars/about" title="За семинарите">За семинарите</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/seminars/software-engineering" title="Софтуерно инженерство">Софтуерно инженерство</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/seminars/others" title="Други">Други</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/seminars/competitions" title="Състезания">Състезания</a>
-                </li>
-            </ul>
-        </div>
-        <div class="rows inline-block">
-            <h4>
-                <a href="http://academy.telerik.com/#" title="За нас">За нас</a>
-            </h4>
-            <ul>
-                <li>
-                    <a href="http://academy.telerik.com/about/news" title="Новини">Новини</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/about/telerik-academy" title="За Академията на Телерик">За Академията на Телерик</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/about/in-the-news" title="В медиите">В медиите</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/about/licenses" title="Лицензи">Лицензи</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/about/gallery" title="Галерия">Галерия</a>
-                </li>
-                <li>
-                    <a href="http://telerikacademy.com/Forum/Home" title="Форум">Форум</a>
-                </li>
-                <li>
-                    <a href="http://telerikacademy.com" title="Студентска система">Студентска система</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/about/website-terms-of-use" title="Условия за ползване на сайта">Условия за ползване на сайта</a>
-                </li>
-                <li>
-                    <a href="http://academy.telerik.com/about/contact-us" title="Контакти">Контакти</a>
-                </li>
-            </ul>
-        </div>
-        <div class="rows inline-block">
-            <h4 class="last-column">
-                <a href="http://academy.telerik.com/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B0-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F" title="Детска академия">Детска академия</a>
-            </h4>
-            </br>
-            <h4 class="last-column">
-                <a href="http://academy.telerik.com/%D0%B5-learning" title="Вход">Вход</a>
-            </h4>
-            </br>
-            <h4 class="last-column">
-                <a href="http://academy.telerik.com/telerik-academy-en" title="En">En</a>
-            </h4>
-            </br>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5">
-                    <div class="versionAndTerms">
-                        <p>Всички права запазени © Telerik Academy 2012-2016 </p>
+            <div class="notification notification-evaluation">
+                <div class="row">
+                    <div class="col-sm-9">
                         <p>
-                            <a href="/Home/About">
+                            В момента има активно оценяване на изпита за курса "Бази данни (октомври 2016)". </br>
+                            Можете да оценявате решенията на вашите колеги.
+                        </p>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="vertical-line"></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class=" message evaluate-now">Оцени сега</div>
+                    </div>
+                </div>
+            </div>
+            <div class="notification notification-exam">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <p>
+                            В момента тече изпит по "Шаблони за дизайн (октомври 2016)". </br>
+                            Можете да изпращате вашите решения.
+                        </p>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="vertical-line"></div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="message send-solution">Изпрати </br> решение</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course">
+                <div class="course-header">
+                    <a href="#">
+                        <h3 class="course-title">Курс "Single-page приложения с Angular 2"</h3>
+                    </a>
+                    <div class="group">
+                        <div class="group-calendar">
+                            <a href="./calendar.html" alt="calendar"><img class="calendar-logo" src="./images/calendar-icon.png"></a>
+                        </div>
+                        <div class="group-coursedate">
+                            <span class="calendar-text-big">05.12.2016 - 04.01.2016</span>
+                            <br />
+                            <span class="calendar-text-small">5 лекции на седмица</span>
+                        </div>
+
+                        <div class="group-attendance">
+                            <img class="attendance-icon" src="./images/attendance-icon.png">
+                        </div>
+                        <div class="group-attendance">
+                            <span class="calendar-text-big">0 	присъствено</span>
+                            <br />
+                            <span class="calendar-text-small">178 онлайн</span>
+                        </div>
+
+                        <div class="time-left">
+                            <img class="attendance-icon" src="./images/time-left.png">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr-horizontal-top">
+
+                <div class="materials-icon">
+                    <a href="./course-materials"><img src="./images/course-materials-icon.png"></a>
+                </div>
+                <div class="license-icon">
+                    <a href="./course-materials"><img src="./images/license-icon.png"></a>
+                </div>
+
+                <div class="course-info">
+                    На 7 декември в "Академията на Телерик" стартира първият в България безплатен курс по Angular 2 - най-новата технология за
+                    създаване на front-end уеб приложения по лесен и бърз начин. Първата версия на Angular 2 беше пусната
+                    публично през септември 2016 г. Angular 2 ви дава възможност да използвате TypeScript - съвременен програмен
+                    език с отворен код, създаден от Microsoft.
+                </div>
+
+                <div>
+                    <a href="#"><img class="not-logged-course-icon" src="./images/course-not-loggedin.png"></a>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <hr class="hr-horizontal-bot">
+
+            </div>
+
+            <div class="course">
+                <div class="course-header">
+                    <a href="#">
+                        <h3 class="course-title">Курс "Училищна академия: Обектно-ориентирано <br />проргамиране с TypeScript"</h3>
+                    </a>
+                    <div class="group">
+                        <div class="group-calendar">
+                            <a href="./calendar.html" alt="calendar"><img class="calendar-logo" src="./images/calendar-icon.png"></a>
+                        </div>
+                        <div class="group-coursedate">
+                            <span class="calendar-text-big">27.11.2016 - 29.11.2016</span>
+                            <br />
+                            <span class="calendar-text-small">3 лекции на седмица</span>
+                        </div>
+
+                        <div class="group-attendance">
+                            <img class="attendance-icon" src="./images/attendance-icon.png">
+                        </div>
+                        <div class="group-attendance">
+                            <span class="calendar-text-big">104	присъствено</span>
+                            <br />
+                            <span class="calendar-text-small">34 онлайн</span>
+                        </div>
+
+                        <div class="time-left">
+                            <img class="attendance-icon" src="./images/time-left1.png">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr-horizontal-top">
+
+                <div class="materials-icon">
+                    <a href="./course-materials"><img src="./images/course-materials-icon.png"></a>
+                </div>
+                <div class="license-icon">
+                    <a href="./course-materials"><img src="./images/license-icon.png"></a>
+                </div>
+
+                <div class="course-info">
+                    Втората среща на "Училищната академия на Телерик" за сезон 2016/2017 ще се проведе на 27, 28 и 29 ноември 2016 г. в зала
+                    Ultimate в нашия учебен център в София. Темата ще бъде "Обектно-ориентирано програмиране с TypeScript".
+                    По време на обучението ще направите първите си стъпки в обектно-ориентираното програмиране и ще се запознаете
+                    с детайлите на програмния език TypeScript. Участието е безплатно, необходима е само предварителна регистрация.
+                    Програмата на обучението може да разгледате на нашия <a href="#" class="hyperlink-orange">информационен уебсайт</a>.
+                </div>
+
+                <div>
+                    <a href="#"><img class="not-logged-course-icon" src="./images/course-not-loggedin.png"></a>
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <hr class="hr-horizontal-bot">
+
+            </div>
+
+            <div class="course">
+                <div class="course-header">
+                    <a href="#">
+                        <h3 class="course-title">Курс "CSS стилизиране (ноември 2016)"</h3>
+                    </a>
+                    <div class="group">
+                        <div class="group-calendar">
+                            <a href="./calendar.html" alt="calendar"><img class="calendar-logo" src="./images/calendar-icon.png"></a>
+                        </div>
+                        <div class="group-coursedate">
+                            <span class="calendar-text-big">17.11.2016 - 10.11.2016</span>
+                            <br />
+                            <span class="calendar-text-small">1 лекция на седмица</span>
+                        </div>
+
+                        <div class="group-attendance">
+                            <img class="attendance-icon" src="./images/attendance-icon.png">
+                        </div>
+                        <div class="group-attendance">
+                            <span class="calendar-text-big">453 присъствено</span>
+                            <br />
+                            <span class="calendar-text-small">364 онлайн</span>
+                        </div>
+
+                        <div class="time-left">
+                            <img class="attendance-icon" src="./images/time-left-expired.png">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="hr-horizontal-top">
+
+                <div class="materials-icon">
+                    <a href="./course-materials"><img src="./images/course-materials-icon.png"></a>
+                </div>
+                <div class="license-icon">
+                    <a href="./course-materials"><img src="./images/license-icon.png"></a>
+                </div>
+
+                <div class="course-info">
+                    “CSS стилизиране”, ще ви предостави необходимите знания, за да създавате модерни уеб сайтове, които се визуализират еднакво
+                    добре на всички различни браузъри и платформи.
+                </div>
+
+                <div>
+                    <a href="#"><img class="not-logged-course-icon-last" src="./images/course-not-loggedin.png"></a>
+                </div>
+
+
+                <hr class="hr-horizontal-bot">
+
+            </div>
+        </main>
+
+        <footer id="mainFooter">
+            <div class="rows inline-block">
+                <h4>
+                    <a href="http://academy.telerik.com/#" title="Софтуерна академия">Софтуерна академия</a>
+                </h4>
+                <ul>
+                    <li>
+                        <a href="http://academy.telerik.com/academy/about" title="За Софтуерната академия">За Софтуерната академия</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/academy/certificates" title="Сертификати">Сертификати</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/academy/admission" title="Прием">Прием</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/academy/apply" title="Кандидатствай">Кандидатствай</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/academy/entrance-exam" title="Приемен изпит">Приемен изпит</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/academy/faq" title="Често задавани въпроси">Често задавани въпроси</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/academy/2016-achievements" title="Постижения през 2016 г.">Постижения през 2016 г.</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rows inline-block">
+                <h4>
+                    <a href="http://academy.telerik.com/#" title="Kурсове">Kурсове</a>
+                </h4>
+                <ul>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/about" title="За курсовете">За курсовете</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/programming" title="Програмиране">Програмиране</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/web-design-and-ui" title="Уеб дизайн и UI технологии">Уеб дизайн и UI технологии</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/software-technologies" title="Софтуерни технологии">Софтуерни технологии</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/soft-skills-and-business-skills" title="Личностни и бизнес умения">Личностни и бизнес умения</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/external-courses" title="Външни курсове">Външни курсове</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/archive" title="Архивни курсове">Архивни курсове</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/student-courses/faq" title="Често задавани въпроси">Често задавани въпроси</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rows inline-block">
+                <h4>
+                    <a href="http://academy.telerik.com/#" title="Училищна академия">Училищна академия</a>
+                </h4>
+                <ul>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/about" title="За Училищната академия">За Училищната академия</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/season-2016-2017" title="Сезон 2016-2017">Сезон 2016-2017</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/season-2015-2016" title="Сезон 2015-2016">Сезон 2015-2016</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/season-2014-2015" title="Сезон 2014-2015">Сезон 2014-2015</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/season-2013-2014" title="Сезон 2013-2014">Сезон 2013-2014</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/2012-2013" title="Сезон 2012-2013">Сезон 2012-2013</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/season-2011-2012" title="Сезон 2011-2012">Сезон 2011-2012</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/season-2010-2011" title="Сезон 2010-2011">Сезон 2010-2011</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/faq" title="Често задавани въпроси">Често задавани въпроси</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/school-academy/makes-students-software-developers" target="_blank" title="Инфографика">Инфографика</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rows inline-block">
+                <h4>
+                    <a href="http://academy.telerik.com/#" title="Семинари">Семинари</a>
+                </h4>
+                <ul>
+                    <li>
+                        <a href="http://academy.telerik.com/seminars/about" title="За семинарите">За семинарите</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/seminars/software-engineering" title="Софтуерно инженерство">Софтуерно инженерство</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/seminars/others" title="Други">Други</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/seminars/competitions" title="Състезания">Състезания</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rows inline-block">
+                <h4>
+                    <a href="http://academy.telerik.com/#" title="За нас">За нас</a>
+                </h4>
+                <ul>
+                    <li>
+                        <a href="http://academy.telerik.com/about/news" title="Новини">Новини</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/about/telerik-academy" title="За Академията на Телерик">За Академията на Телерик</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/about/in-the-news" title="В медиите">В медиите</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/about/licenses" title="Лицензи">Лицензи</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/about/gallery" title="Галерия">Галерия</a>
+                    </li>
+                    <li>
+                        <a href="http://telerikacademy.com/Forum/Home" title="Форум">Форум</a>
+                    </li>
+                    <li>
+                        <a href="http://telerikacademy.com" title="Студентска система">Студентска система</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/about/website-terms-of-use" title="Условия за ползване на сайта">Условия за ползване на сайта</a>
+                    </li>
+                    <li>
+                        <a href="http://academy.telerik.com/about/contact-us" title="Контакти">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rows inline-block">
+                <h4 class="last-column">
+                    <a href="http://academy.telerik.com/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B0-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F"
+                        title="Детска академия">Детска академия</a>
+                </h4>
+                </br>
+                <h4 class="last-column">
+                    <a href="http://academy.telerik.com/%D0%B5-learning" title="Вход">Вход</a>
+                </h4>
+                </br>
+                <h4 class="last-column">
+                    <a href="http://academy.telerik.com/telerik-academy-en" title="En">En</a>
+                </h4>
+                </br>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="versionAndTerms">
+                            <p>Всички права запазени © Telerik Academy 2012-2016 </p>
+                            <p>
+                                <a href="/Home/About">
                                     Telerik Academy Learning System 5.7 (build 20160514.1dfa2d3
                                 </a>
-                        </p>
-                        <p class="termsAndConditions">
-                            <a href="http://telerikacademy.com/Files/1cf99863-2163-4c99-8e82-a667a2814924.pdf" target="_blank">Правила и условия</a>
-                        </p>
+                            </p>
+                            <p class="termsAndConditions">
+                                <a href="http://telerikacademy.com/Files/1cf99863-2163-4c99-8e82-a667a2814924.pdf" target="_blank">Правила и условия</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-3">
-                    <div id="FooterLogo">
-                        <a href="./index.html"><img src="./images/logo.png" alt="Telerik Academy"></a>
+                    <div class="col-sm-3">
+                        <div id="FooterLogo">
+                            <a href="./index.html"><img src="./images/logo.png" alt="Telerik Academy"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div id="FooterSocialButtons">
-                        <a href="http://www.facebook.com/TelerikAcademy"><img src="./images/social-buttons.png" alt="Social Buttons"></a>
+                    <div class="col-sm-4">
+                        <div id="FooterSocialButtons">
+                            <a href="http://www.facebook.com/TelerikAcademy"><img src="./images/social-buttons.png" alt="Social Buttons"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="./public/js/script.js"></script>
+        <script src="./public/js/script.js"></script>
 </body>
 
 </html>
