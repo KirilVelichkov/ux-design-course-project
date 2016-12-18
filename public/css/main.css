@@ -192,6 +192,11 @@ hr.my-color {
 .menu-active{
     border-bottom:5px solid #5BE52C;
 }
+#searchBox{
+    display: none;
+    position: absolute;
+    margin-left:-390px;
+}
 .course-info {
     /* border:1px solid black; */
     display: inline-block;

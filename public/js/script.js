@@ -18,3 +18,11 @@ function showCourses() {
     // divToShow.style.display = 'block';
     // divToHide.style.display = 'none';
 }
+
+function hideSearch(){
+    $('#searchBox').hide();
+}
+
+function showSearch(){
+    $('#searchBox').show();
+}
