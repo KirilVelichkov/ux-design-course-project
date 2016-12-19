@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <title>PhotoShopite</title>
+    <meta charset="UTF-8">
+    <link href="./public/css/user-profile.css" rel="stylesheet" type="text/css" />
+    <link href="./public/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./public/css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./public/css/course-details.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./public/css/allCourses-nav.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <ul>
+            <li class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="Telerik Academy"></a>
+            </li>
+            <li class="menu"><a href="#news">Академия</a></li>
+            <li class="menu" id="courses"><a href="#news" onclick="showCourses()">Курсове и инициативи</a></li>
+            <li class="menu"><a href="#news">Форум</a></li>
+            <li class="menu"><a href="#news">Помощ</a></li>
+            <li><img id="searchBox" src="./images/search-expanded.png" onclick="hideSearch()"></li>
+            <li class="navbar-icons">
+                <ul>
+                    <li class="menu">
+                        <a href="#"><img id="searchIcon" src="./images/search.png" alt="search" onclick="showSearch()"></a>
+                    </li>
+                    <li class="menu">
+                        <a href="#"><img src="./images/language.png" alt="language"></a>
+                    </li>
+                    <li class="menu">
+                        <a href="#" onclick="showProfile()"><img src="./images/account.png" alt="account"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <div class="course">
+            <div class="course-header">
+                <a href="#">
+                    <h3 class="course-title">Курс "Училищна академия: Обектно-ориентирано <br />проргамиране с TypeScript"</h3>
+                </a>
+                <div class="group">
+                    <div class="group-calendar">
+                        <a href="./calendar.html" alt="calendar"><img class="calendar-logo" src="./images/calendar-icon.png"></a>
+                    </div>
+                    <div class="group-coursedate">
+                        <span class="calendar-text-big">27.11.2016 - 29.11.2016</span>
+                        <br />
+                        <span class="calendar-text-small">3 лекции на седмица</span>
+                    </div>
+
+                    <div class="group-attendance">
+                        <img class="attendance-icon" src="./images/attendance-icon.png">
+                    </div>
+                    <div class="group-attendance">
+                        <span class="calendar-text-big">104	присъствено</span>
+                        <br />
+                        <span class="calendar-text-small">34 онлайн</span>
+                    </div>
+
+                    <div class="time-left">
+                        <img class="attendance-icon" src="./images/time-left1.png">
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-horizontal-top">
+
+            <div class="buttons">
+                <div class="program">
+                    <a href="./program"><img class="left" src="./images/program.png" /></a>
+                </div>
+                <div class="expired">
+                    <a href="./expired"><img class="left" src="./images/expired.png" /></a>
+                </div>
+            </div>
+
+            <div class="course-info">
+                Втората среща на "Училищната академия на Телерик" за сезон 2016/2017 ще се проведе на 27, 28 и 29 ноември 2016 г. в зала Ultimate в нашия учебен център в София. Темата ще бъде "Обектно-ориентирано програмиране с TypeScript". По време на обучението ще
+                направите първите си стъпки в обектно-ориентираното програмиране и ще се запознаете с детайлите на програмния език TypeScript. Участието е безплатно, необходима е само предварителна регистрация. Програмата на обучението може да разгледате
+                на нашия <a href="#" class="hyperlink-orange">информационен уебсайт</a>.
+            </div>
+
+            <div class="course-details">
+                ВАЖНО! За да получите бележка за присъствие на срещата на "Училищната академия на Телерик", е необходимо: </br>
+                - да предадете попълнена от родител декларация (може да я свалите по-долу) </br>
+                - да сте се регистрирали на четеца, намиращ се до входа на залата с картата с баркод, генерирана от нашата онлайн система в профила ви в началото и края на срещата </br>
+                - да сте попълнили първото име и фамилията си в профила си в онлайн системата ни Настаняване в Парк хотел "Москва" </br>
+                С лчбезното съзействие на Парк хотел "Москва" всеки месец участниците в "Училищната академия на Телерик" могат да си запазят места за настаняване в хотела на преференциални цени. Желаеещите да ползват нощувки трябва да следват процедурата: </br>
+                - Свързват се с Парк хотел "Москва", за да си запазят място, като посочват, че посещават "Училищната академия на Телерик" на телефон: 02/971 10 24 </br>
+                - Заплащат нощувките по банков път не по-късно от 3 работни дни преди настаняването </br>
+                - Носят бележката за направеното плащане със себе си </br>
+                </br>
+                Преференциалните цени включват нощувка, туристически данък и ДДС. </br>
+                </br>
+                Банкова сметка в лева при Общинска Банка ФЦ КАТ, офис Парк хотел "Москва" </br>
+                Титуляр: "ПАРК ХОТЕЛ "МОСКВА"АД" </br>
+                IBAN: BG77SOMB91301053534401 </br>
+                BIC: SOMB BGSF </br>
+                МОЛ: Десислава Филчева </br>
+            </div>
+
+            <div>
+                <a href="#"><img class="not-logged-course-icon" src="./images/course-not-loggedin.png"></a>
+            </div>
+
+            <div class=" text-center">
+                <img src="./images/materials.png" alt="materials" />
+            </div>
+            <hr class="hr-horizontal-bot">
+        </div>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="rows inline-block">
+            <h4>
+                <a href="http://academy.telerik.com/#" title="Софтуерна академия">Софтуерна академия</a>
+            </h4>
+            <ul>
+                <li>
+                    <a href="http://academy.telerik.com/academy/about" title="За Софтуерната академия">За Софтуерната академия</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/academy/certificates" title="Сертификати">Сертификати</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/academy/admission" title="Прием">Прием</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/academy/apply" title="Кандидатствай">Кандидатствай</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/academy/entrance-exam" title="Приемен изпит">Приемен изпит</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/academy/faq" title="Често задавани въпроси">Често задавани въпроси</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/academy/2016-achievements" title="Постижения през 2016 г.">Постижения през 2016 г.</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rows inline-block">
+            <h4>
+                <a href="http://academy.telerik.com/#" title="Kурсове">Kурсове</a>
+            </h4>
+            <ul>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/about" title="За курсовете">За курсовете</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/programming" title="Програмиране">Програмиране</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/web-design-and-ui" title="Уеб дизайн и UI технологии">Уеб дизайн и UI технологии</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/software-technologies" title="Софтуерни технологии">Софтуерни технологии</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/soft-skills-and-business-skills" title="Личностни и бизнес умения">Личностни и бизнес умения</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/external-courses" title="Външни курсове">Външни курсове</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/archive" title="Архивни курсове">Архивни курсове</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/student-courses/faq" title="Често задавани въпроси">Често задавани въпроси</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rows inline-block">
+            <h4>
+                <a href="http://academy.telerik.com/#" title="Училищна академия">Училищна академия</a>
+            </h4>
+            <ul>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/about" title="За Училищната академия">За Училищната академия</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/season-2016-2017" title="Сезон 2016-2017">Сезон 2016-2017</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/season-2015-2016" title="Сезон 2015-2016">Сезон 2015-2016</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/season-2014-2015" title="Сезон 2014-2015">Сезон 2014-2015</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/season-2013-2014" title="Сезон 2013-2014">Сезон 2013-2014</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/2012-2013" title="Сезон 2012-2013">Сезон 2012-2013</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/season-2011-2012" title="Сезон 2011-2012">Сезон 2011-2012</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/season-2010-2011" title="Сезон 2010-2011">Сезон 2010-2011</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/faq" title="Често задавани въпроси">Често задавани въпроси</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/school-academy/makes-students-software-developers" target="_blank" title="Инфографика">Инфографика</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rows inline-block">
+            <h4>
+                <a href="http://academy.telerik.com/#" title="Семинари">Семинари</a>
+            </h4>
+            <ul>
+                <li>
+                    <a href="http://academy.telerik.com/seminars/about" title="За семинарите">За семинарите</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/seminars/software-engineering" title="Софтуерно инженерство">Софтуерно инженерство</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/seminars/others" title="Други">Други</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/seminars/competitions" title="Състезания">Състезания</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rows inline-block">
+            <h4>
+                <a href="http://academy.telerik.com/#" title="За нас">За нас</a>
+            </h4>
+            <ul>
+                <li>
+                    <a href="http://academy.telerik.com/about/news" title="Новини">Новини</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/about/telerik-academy" title="За Академията на Телерик">За Академията на Телерик</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/about/in-the-news" title="В медиите">В медиите</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/about/licenses" title="Лицензи">Лицензи</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/about/gallery" title="Галерия">Галерия</a>
+                </li>
+                <li>
+                    <a href="http://telerikacademy.com/Forum/Home" title="Форум">Форум</a>
+                </li>
+                <li>
+                    <a href="http://telerikacademy.com" title="Студентска система">Студентска система</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/about/website-terms-of-use" title="Условия за ползване на сайта">Условия за ползване на сайта</a>
+                </li>
+                <li>
+                    <a href="http://academy.telerik.com/about/contact-us" title="Контакти">Контакти</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rows inline-block">
+            <h4 class="last-column">
+                <a href="http://academy.telerik.com/%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B0-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F" title="Детска академия">Детска академия</a>
+            </h4>
+            </br>
+            <h4 class="last-column">
+                <a href="http://academy.telerik.com/%D0%B5-learning" title="Вход">Вход</a>
+            </h4>
+            </br>
+            <h4 class="last-column">
+                <a href="http://academy.telerik.com/telerik-academy-en" title="En">En</a>
+            </h4>
+            </br>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="versionAndTerms">
+                        <p>Всички права запазени © Telerik Academy 2012-2016 </p>
+                        <p>
+                            <a href="/Home/About">
+                                    Telerik Academy Learning System 5.7 (build 20160514.1dfa2d3
+                                </a>
+                        </p>
+                        <p class="termsAndConditions">
+                            <a href="http://telerikacademy.com/Files/1cf99863-2163-4c99-8e82-a667a2814924.pdf" target="_blank">Правила и условия</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="FooterLogo">
+                        <a href="./index.html"><img src="./images/logo.png" alt="Telerik Academy"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="FooterSocialButtons">
+                        <a href="http://www.facebook.com/TelerikAcademy"><img src="./images/social-buttons.png" alt="Social Buttons"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
